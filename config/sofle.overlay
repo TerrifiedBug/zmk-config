@@ -1,0 +1,9 @@
+/*
+ * Override OLED display from 128x32 to 128x64.
+ */
+
+&oled {
+    height = <64>;
+    multiplex-ratio = <63>;
+    /delete-property/ com-sequential;
+};
