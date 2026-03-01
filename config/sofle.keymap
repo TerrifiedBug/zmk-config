@@ -104,3 +104,10 @@
 
     };
 };
+
+// Mechboards Sofle v2 routes the nice!view CS signal to pin D4
+// instead of the default D1. Without this override the display
+// shows garbled dots or nothing at all.
+&nice_view_spi {
+    cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
+};
